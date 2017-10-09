@@ -5,10 +5,10 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 ``` bash
 # Install vue-cli if you haven't already
 $ npm i -g vue-cli      
+
 # Create a new project based on this template                        
-$ vue init daliborgogic/dlbr-template-pwa [project_name]   
-# Navigate into your new project folder  
-$ cd [project_name]  
+$ vue init daliborgogic/dlbr-template-pwa [project_name] && \
+  cd [project_name] 
 # serve in dev mode, with hot reload at localhost:8080
 $ npm run dev
 # build for production

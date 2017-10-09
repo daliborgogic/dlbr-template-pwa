@@ -1,0 +1,91 @@
+@import "variables"
+
+*
+*::before
+*::after
+  box-sizing border-box
+
+html
+body
+  font-family $sansSerif
+  line-height $lineHeightBase
+  font-size $fontSizeBase
+  font-weight $fontWeightBase
+  color $bodyColor
+  background-color $bodyBg
+  -webkit-text-size-adjust 100%
+  -ms-text-size-adjust 100%
+  -ms-overflow-style scrollbar
+  -webkit-tap-highlight-color transparent //rgba(0,0,0,0)
+  text-rendering optimizeLegibility
+  -webkit-font-smoothing antialiased
+
+
+// IE10+ doesn't honor `<meta name="viewport">` in some cases.
+@at-root
+  @-ms-viewport
+    width device-width
+
+html
+  height 100%
+
+body
+  min-height 100%
+  margin 0
+  overflow-y scroll
+
+
+// Suppress the focus outline on elements that cannot be accessed via keyboard.
+// This prevents an unwanted focus outline from appearing around elements that
+// might still respond to pointer events.
+[tabindex="-1"]:focus
+  outline none !important
+
+h1
+h2
+h3
+  margin-top 0
+  margin-bottom $headingsMarginBottom
+
+p
+  margin-top 0
+  margin-bottom $paragraph-margin-bottom
+
+a
+  color $linkColor
+  text-decoration: none
+  background-color transparent
+  -webkit-text-decoration-skip objects
+  &:hover
+    color $linkHoverColor
+    text-decoration underline
+  &:not([href]):not([tabindex])
+    color inherit
+    text-decoration none
+  &:not([href]):not([tabindex]):focus
+  &:not([href]):not([tabindex]):hover
+    color inherit
+    text-decoration none
+  &:not([href]):not([tabindex]):focus
+    outline 0
+
+img
+  vertical-align middle
+  border-style none
+
+svg:not(:root)
+  overflow hidden
+
+a,
+button
+[role="button"]
+input:not([type=range])
+label
+// select
+// textarea
+  -ms-touch-action manipulation
+      touch-action manipulation
+
+
+
+

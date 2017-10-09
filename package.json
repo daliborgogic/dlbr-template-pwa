@@ -1,0 +1,9 @@
+{
+  "name": "dlbr-template-pwa",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "PWA template for vue-cli.",
+  "devDependencies": {
+    "vue-cli": "^2.8.0"
+  }
+}

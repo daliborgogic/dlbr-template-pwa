@@ -3,12 +3,18 @@
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ``` bash
-$ npm i -g vue-cli                              # Install vue-cli if you haven't already
-$ vue init daliborgogic/vue-simple-boilerplate  # Create a new project based on this template
-$ cd vue-simple-boilerplate                     # Navigate into your new project folder
-
-$ npm i -g live-server                          # Install live-server if you haven't already
-$ live-server                                   # Run live-server and open it in your browser
+# Install vue-cli if you haven't already
+$ npm i -g vue-cli      
+# Create a new project based on this template                        
+$ vue init daliborgogic/dlbr-template-pwa [project_name]   
+# Navigate into your new project folder  
+$ cd [project_name]  
+# serve in dev mode, with hot reload at localhost:8080
+$ npm run dev
+# build for production
+$ npm run build
+# serve in production mode
+$ npm start           
 ```
 
 ### Fork It And Make Your Own
@@ -16,4 +22,5 @@ $ live-server                                   # Run live-server and open it in
 You can [fork this repo](https://help.github.com/articles/fork-a-repo/) to create your own boilerplate, and use it with `vue-cli`:
 
 ``` bash
-vue ini
+$ vue init [username/repo] [project_name]
+```
